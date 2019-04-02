@@ -1,0 +1,27 @@
+:root {
+    --whiteColor: #ffffff;
+    --blackColor: #000000;
+    --greyColor: #eeeeee;
+    --darkGreyColor: #aaaaaa;
+    --deepGreyColor: #666666;
+    --pinkColor: #f65a5e;
+    --skyColor: #5da3b0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
