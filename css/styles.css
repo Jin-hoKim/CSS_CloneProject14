@@ -12,6 +12,11 @@
     box-sizing: border-box;
 }
 
+html {
+    width: 100%;
+    height: 100%;
+}
+
 html,
 body,
 h1,
@@ -24,4 +29,148 @@ ul,
 li {
     margin: 0;
     padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+div,
+section,
+footer {
+    /* border: 1px dashed var(--deepGreyColor); */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px 20px 100px;
+}
+
+.header .header__menulist {
+    display: flex;
+}
+
+.header__menulist .menulist__item {
+    padding: 0px 30px;
+    text-transform: uppercase;
+    color: var(--deepGreyColor);
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.main {
+    margin-left: 25px;
+}
+
+.main .main__titlebox {
+    background-image: url("https://siroccoverland.files.wordpress.com/2015/03/20140718-_dsc4483.jpg?w=949");
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+}
+
+.main__titlebox .titlebox__title {
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 200px;
+    font-weight: 900;
+    letter-spacing: 30px;
+}
+
+.main .blog {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.blog .blog__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 800;
+    color: rgba(50, 50, 50, 1);
+    letter-spacing: 10px;
+    padding: 50px 0px;
+}
+
+.blog .blog__post {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    grid-gap: 30px;
+    margin-bottom: 50px;
+}
+
+.blog .blog__post .post__column .post__text {
+    display: block;
+}
+
+.blog .blog__post .post__column .post__text:first-child:first-letter {
+    color: #903;
+    float: left;
+    font-size: 95px;
+    line-height: 80px;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-left: 3px;
+}
+
+.blog .blog__post .post__column .post__image {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.footer {
+    padding: 80px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.footer .logo {
+    font-weight: 800;
+    font-size: 20px;
+    letter-spacing: 12px;
+}
+
+.footer .subscript {
+    border-bottom: 1px solid var(--blackColor);
+}
+
+.subscript input {
+    border: none;
+    padding-left: 5px;
+    font-size: 12px;
+    font-family: FontAwesome;
+    text-decoration: inherit;
+}
+
+
+/* .subscript input:focus {
+    outline: none;
+} */
+
+.footer .subscript .subscript__descript {
+    font-size: 12px;
+    color: var(--deepGreyColor);
+}
+
+.footer .snslist {
+    display: flex;
+}
+
+.snslist .snslist__item {
+    margin-left: 40px;
+    font-size: 12px;
+}
+
+.snslist .snslist__item:first-child {
+    margin-left: 0px;
 }
